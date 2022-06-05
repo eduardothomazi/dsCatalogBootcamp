@@ -2,6 +2,7 @@ package com.devsuperior.dscatalog.dto;
 
 import com.devsuperior.dscatalog.entities.User;
 
+import javax.validation.constraints.NotBlank;
 import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
@@ -11,7 +12,9 @@ public class UserDTO implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private Long id;
+    @NotBlank(message = "O nome é obrigatório")
     private String firstName;
+    @NotBlank(message = "O sobrenome é obrigatório")
     private String lastName;
     private String email;
 
