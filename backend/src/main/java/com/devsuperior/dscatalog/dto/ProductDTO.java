@@ -18,15 +18,15 @@ public class ProductDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	private Long id;
-	@Size(min = 3, max = 60, message = "Nome entre 3 e 60 caracteres")
+	@Size(min = 3, max = 60, message = "Between 3 and 60 characters")
 	@NotBlank
 	private String name;
 	@NotBlank
 	private String description;
-	@Positive(message = "O valor deve ser positivo!")
+	@Positive(message = "Value must be positive!")
 	private Double price;
 	private String imgUrl;
-	@PastOrPresent(message = "Data futura não permitida")
+	@PastOrPresent(message = "No further date allowed!")
 	private Instant date;
 	
 	private List<CategoryDTO> categories = new ArrayList<>();

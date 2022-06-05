@@ -12,9 +12,9 @@ public class UserDTO implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private Long id;
-    @NotBlank(message = "O nome é obrigatório")
+    @NotBlank(message = "Field name is mandatory")
     private String firstName;
-    @NotBlank(message = "O sobrenome é obrigatório")
+    @NotBlank(message = "Field last name is mandatory")
     private String lastName;
     private String email;
 
