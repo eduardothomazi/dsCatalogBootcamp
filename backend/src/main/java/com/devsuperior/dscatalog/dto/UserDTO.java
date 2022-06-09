@@ -6,7 +6,6 @@ import javax.validation.constraints.NotBlank;
 import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
-import java.util.stream.Collectors;
 
 public class UserDTO implements Serializable {
     private static final long serialVersionUID = 1L;
